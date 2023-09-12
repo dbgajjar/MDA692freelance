@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
     <header>
@@ -35,11 +36,19 @@
                     <li>
                         <a class="btn" href="login.html">Login</a>
                     </li>
+                    <li>
+                        <a class="btn" href="create-account.html">Register</a>
+                    </li>
                 </ul>
             </div>
+          
         </div>
     </div>
+    <div class="toggle">
+        <img src="image/menu.png" alt="image" title="image">
+    </div>
 </div>
+
     </header>
     <section class="home1">
         <div class="container">
@@ -419,13 +428,19 @@
                     autoplayHoverPause: true,
                     responsive: {
                         0: {
-                            items: 3
+                            items: 1
                         },
                         600: {
-                            items: 3
+                            items: 1
                         },
                         1000: {
-                            items: 3
+                            items: 2
+                        },
+                        1200:{
+                            items:2
+                        },
+                        1300:{
+                            items:3
                         }
                     }
                 })
@@ -453,5 +468,13 @@
                 })
             });
         </script>
+            <script>
+                jQuery(document).ready(function() {
+        
+                    jQuery('header .toggle').click(function() {
+                        jQuery('.bottom-right').slideToggle('slow');
+                    })
+                });
+            </script>
 </body>
 </html>

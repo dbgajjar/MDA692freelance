@@ -6,40 +6,49 @@
     <title>AUSDAIS LTY</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
     <header>
-<div class="navbar">
-    <div class="container">
-        <div class="header-bottom">
-            <div class="bottom-left">
-                <div class="logo">
-                    <a href="index.html"> <img src="image/logo.png" alt="logo" title="logo"></a>
+        <div class="navbar">
+            <div class="container">
+                <div class="header-bottom">
+                    <div class="bottom-left">
+                        <div class="logo">
+                            <a href="index.html"> <img src="image/logo.png" alt="logo" title="logo"></a>
+                        </div>
+                    </div>
+                    <div class="bottom-right">
+                        <ul>
+                            <li>
+                                <a  href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a class="active" href="about.html">About</a>
+                            </li>
+                            <li>
+                                <a href="search.html">Jobs</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                            <li>
+                                <a class="btn" href="login.html">Login</a>
+                            </li>
+                            <li>
+                                <a class="btn" href="create-account.html">Register</a>
+                            </li>
+                        </ul>
+                    </div>
+                  
                 </div>
             </div>
-            <div class="bottom-right">
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a class="active" href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="search.html">Jobs</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                    <li>
-                        <a class="btn" href="login.html">Login</a>
-                    </li>
-                </ul>
+            <div class="toggle">
+                <img src="image/menu.png" alt="image" title="image">
             </div>
         </div>
-    </div>
-</div>
-    </header>
+        
+            </header>
     <section class="login1">
         <div class="container">
             <div class="login-heading">
@@ -202,5 +211,14 @@
                             <a href="index.html">AUSDAIS LTY</a> All Rights Reserved. </p>
                 </div>
         </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script>
+            jQuery(document).ready(function() {
+    
+                jQuery('header .toggle').click(function() {
+                    jQuery('.bottom-right').slideToggle('slow');
+                })
+            });
+        </script>
 </body>
 </html>

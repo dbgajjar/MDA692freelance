@@ -6,11 +6,11 @@
     <title>AUSDAIS LTY</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
     <header class="dashboard">
-
         <div class="navbar">
             <div class="container">
                 <div class="header-bottom">
@@ -20,23 +20,24 @@
                         </div>
                     </div>
                     <div class="bottom-right">
-                 
                         <ul>
-                            <li><a href="client-dashboard.html">Dashboard</a></li>
-                            <li><a href="client-jobs.html">Jobs</a></li>
-                           <li><a href="message.html">Messages</a></li>
-                           <li><a class="active" href="freelancer.html">Freelancer</a></li>
+                            <li><a href="client-profile.html">Profile</a></li>
+                           <li><a  href="message.html">Messages</a></li>
+                           <li><a class="active" href="freelancer.html">Freelancers'</a></li>
                            <li><a href="index.html">Logout</a></li>
                            <li><a  class="btn" href="post-jobs.html">Post Jobs</a></li>
                           
                         </ul>
                     </div>
+                  
                 </div>
             </div>
+            <div class="toggle">
+                <img src="image/menu.png" alt="image" title="image">
+            </div>
         </div>
+        
             </header>
-
-
 <section class="profile freelancer">
     <div class="container">
         <div class="title">
@@ -224,6 +225,15 @@
                             <a href="index.html">AUSDAIS LTY</a> All Rights Reserved. </p>
                 </div>
         </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script>
+            jQuery(document).ready(function() {
+    
+                jQuery('header .toggle').click(function() {
+                    jQuery('.bottom-right').slideToggle('slow');
+                })
+            });
+        </script>
 </body>
 
 

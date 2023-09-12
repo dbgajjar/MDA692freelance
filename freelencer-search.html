@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AUSDAIS LTY</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body>
     <header class="dashboard">
-
         <div class="navbar">
             <div class="container">
                 <div class="header-bottom">
@@ -20,20 +20,24 @@
                         </div>
                     </div>
                     <div class="bottom-right">
-                 
                         <ul>
                             <li><a href="index.html">Home</a></li>
                             <li><a class="active" href="freelencer-search.html">Jobs</a></li>
                             <li><a   href="freelencer-confirm.html">New Jobs</a></li>
                             <li><a href="profile.html">Profile</a></li>
-                            <li><a   href="apply-jobs.html">Apply for Job</a></li>
+                            <li><a  href="apply-jobs.html">Apply for Job</a></li>
                          
                              <li><a href="index.html">Logout</a></li>
                         </ul>
                     </div>
+                  
                 </div>
             </div>
+            <div class="toggle">
+                <img src="image/menu.png" alt="image" title="image">
+            </div>
         </div>
+        
             </header>
 
 <section class="job-list">
@@ -41,8 +45,33 @@
     <div class="title">
         <div class="search-name">
             <h2>Jobs</h2> </div>
-            <div class="search-box">
-                <input type="text" class="form-control" placeholder="Search Jobs"><i class="fa fa-search"></i>
+            <div class="search">
+                <div class="input-group">
+                    <select name="job title" placeholder="Job Title" value="Job Title">
+                        <option value="1">Web Designer</option>
+                        <option value="2">Content Writing</option>
+                        <option value="3">Web Development</option>
+                        <option value="4">Social Media Management</option>
+                        <option value="5">Graphic Design</option>
+                        <option value="6">Virtual Assistance</option>
+                        <option value="7">SEO Specialist</option>
+                        <option value="8">Online Tutoring</option>
+                        <option value="9">Video Editing</option>
+                        <option value="10">Data Entry</option>
+                        <option value="11">Marketing Consultant</option>
+                     </select>
+                    </div>
+                   <div class="input-group">
+                    <select name="job title" placeholder="Job Type" value="Job Type">
+                        <option value="1">Fresher</option>
+                        <option value="2">Experienced</option>
+                       
+                     </select>
+                   </div>
+              
+                <div class="find-btn">
+                    <a class="btns" href="search.html">Find job</a>
+                </div>
             </div>
     </div>
 <div class="row">
@@ -204,6 +233,15 @@
                             <a href="index.html">AUSDAIS LTY</a> All Rights Reserved. </p>
                 </div>
         </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script>
+            jQuery(document).ready(function() {
+    
+                jQuery('header .toggle').click(function() {
+                    jQuery('.bottom-right').slideToggle('slow');
+                })
+            });
+        </script>
 </body>
 
 
