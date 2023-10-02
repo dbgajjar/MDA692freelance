@@ -40,82 +40,73 @@
         
             </header>
 
-            <section class="job-list detail">
+            <section class="job-list">
                 <div class="container">
-            
+                    <div class="title">
+                        <div class="search-name">
+                            <h2>Claim Process </h2>
+                        </div>
+                    </div>
                     <div class="row">
               
               
                             
                             <div class="col-10">
-                          <div class="apply-bid">
-                       <div class="col-6">
-                        <div class="apply-bid-info">
-                            <div class="icon">
-                                <i class="fa fa-clock-o"></i>
-                            </div>
-                                <div class="info"> <h4>Hourly</h4>
-                                    <p>Less than 30 hrs/week</p>
-                                    <p>More than 6 months</p></div>
-                      
-                        </div>
-                       </div>
-                          <div class="col-6">
-                            <div class="apply-bid-info">
-                                <div class="icon">
-                                    <i class="fa fa-dollar"></i>
-                               
-                                </div>
-                                <div class="info">
-                                    <h4>Entry Level</h4>
-                                    <p>I am Looking for freelancer with the lowest price</p>
-                                </div>
-                            </div> </div>
-                          </div>
+                       
                           <div class="apply-detail">
-                     <div class="detail-info">
-                        <h3>Detail</h3>
-                        <p>Hello,</p>
-                        <p>Requires a fully functional and responsive website for their business. The freelancer will design and develop the website, ensuring it is user-friendly and optimized for various devices.</p>
-                        <p>Jonathan Holt</p>
-                     </div>
-                            
-                                
-                  
-                        <div class="proposal">
-                            <h3>Prosoal Terms</h3>
-                            <p>You are submitting Proposal as a freelancer</p>
-                        </div>
-    <div class="rate">
-        <div class="filter-box">
-            <h3>Hourly Rate</h3>
-            <div class="range-slider">
-<input type="text" class="js-range-slider" value="" />
-    </div>
-    </div>
-    <div class="filter-box">
-        <h3>Project Rate</h3>
-        <div class="range-slider">
-<input type="text" class="js-range-slider" value="" />
-</div>
-</div>
-    </div>
-                     
-                        <div class="input-box">
-                            <label for="example">Show me example of previous work</label>
-                            <textarea name="" id="" class="form-control"></textarea>
-                        </div>
-                       <div class="input-box">
-                        <label for="">Atteachment(optional)</label>
-                        <input type="file" class="form-control" placeholder="drag or upload project file">
-                       </div>
+               <div class="row">  <div class="col-6">
+                <div class="detail-info">
+                    <h3>Project Name</h3>
+             
+                    <p>Web Design Delight</p>
+                 </div> 
+             </div>
+             <div class="col-6">
+                <div class="detail-info">
+                    <h3>Total Hours</h3>
+             
+                    <p>23 Hours</p>
+                 </div> 
+             </div></div>
+             <div class="row">  <div class="col-6">
+                <div class="detail-info">
+                    <h3>Payment Status</h3>
+             
+                    <p>Paid</p>
+                 </div> 
+             </div>
+             <div class="col-6">
+                <div class="detail-info">
+                    <h3>Stripe pay</h3>
+             
+                    <p>+0.25 Extra</p>
+                 </div> 
+             </div></div>
+             
+                      
 
-                        </a>
+                    <a class="btns" href="#">Accept</a>
+                    <a class="btns" id="myBtn" href="#">Reject</a>
+             
+     
                 </div>
-                <div class="proposal-btn"><button class="btns">Submit</button>
-                    <button class="btn">Cancel</button></div>
-            </div>
+                <!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+<label for="Reason for Rejection">Reason</label>
+    <input type="text" class="form-control" placeholder="Description">
+
+    </div>
+ 
+  </div>
                 </div>
+             
+                </div>   <div class="proposal-btn">
+                    <a class="btn" href="#">Submit</a>
+                   </div>
             </section>
 
     <footer>
@@ -202,7 +193,6 @@
                 </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="js/range-slide.js"></script>
         <script>
             jQuery(document).ready(function() {
     
@@ -211,6 +201,34 @@
                 })
             });
         </script>
+   
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
 </body>
 
 
